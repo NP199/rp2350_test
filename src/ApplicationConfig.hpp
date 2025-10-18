@@ -51,7 +51,7 @@ struct WS2812Config_test {
 };
 
 using WS2812 = Kvasir::Pio::
-  WS2812<Clock, HW::Pin::ws2812led, Dma, Dma::Channel::ch1, Dma::Priority::low, WS2812Config>;
+  WS2812<Clock, HW::Pin::ws2812led, Dma, Dma::Channel::ch0, Dma::Priority::low, WS2812Config>;
 
 using WS2812_test = Kvasir::Pio::
   WS2812<Clock, HW::Pin::ws2812led_test, Dma, Dma::Channel::ch1, Dma::Priority::low, WS2812Config_test>;
