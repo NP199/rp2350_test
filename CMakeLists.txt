@@ -20,4 +20,6 @@ project(
 
 include(${KVASIR_ROOT}/cmake/util.cmake)
 
-kvasir_executable_variants("" SOURCES src/main.cpp LIBRARIES OPTIMIZATION size)
+pioasm_generate(ws2812Pio INPUT_FILE ${CHIP_ROOT}/src/chip/rp_common/pio/ws2812.pio)
+
+kvasir_executable_variants("" SOURCES src/main.cpp LIBRARIES ws2812Pio OPTIMIZATION size)

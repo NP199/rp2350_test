@@ -3,9 +3,9 @@
 
 namespace HW {
 namespace Pin {
-    using led_r = decltype(makePinLocation(Kvasir::Io::port0, Kvasir::Io::pin16));
-    using led_g = decltype(makePinLocation(Kvasir::Io::port0, Kvasir::Io::pin17));
-    using led_b = decltype(makePinLocation(Kvasir::Io::port0, Kvasir::Io::pin18));
+    using ws2812led      = decltype(makePinLocation(Kvasir::Io::port0, Kvasir::Io::pin21));
+    using ws2812led_test = decltype(makePinLocation(Kvasir::Io::port0, Kvasir::Io::pin24));
+    using led_r          = decltype(makePinLocation(Kvasir::Io::port0, Kvasir::Io::pin7));
 }   // namespace Pin
 
 struct Fault_CleanUpAction {
